@@ -61,9 +61,9 @@ const addCardToCustomer = async (req, res) => {
             console.log("🚀 ~ addCardToCustomer ~ card:", createdCard)
         } catch (err) {
             console.log("🚀 ~ addCardToCustomer ~ err:", err)
-            return res.json({ message: err.message, status: 402, data: paymentMethods })
+            return res.json({ message: err.message, status: 402 })
         }
-        return res.json({ success: true, message: 'Card added successfully.', data: paymentMethods });
+        return res.json({ success: true, message: 'Card added successfully.'});
     } catch (error) {
         console.error('Error adding card:', error);
         return res.status(500).json({ success: false, error: 'Failed to add card.' });
