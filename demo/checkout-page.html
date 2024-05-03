@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout Page</h1>
+    <form id="checkout-form">
+        <label for="card-selector">Select a saved card:</label>
+        <select id="card-selector">
+            <!-- Saved cards will be dynamically populated here -->
+        </select>
+        <button type="submit">Pay Now</button>
+    </form>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="checkout.js"></script>
+</body>
+
+</html>
