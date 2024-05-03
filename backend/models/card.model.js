@@ -5,7 +5,7 @@ const cardSchema = mongoose.Schema({
     brand: String,
     last4: { type: Number, required: true },
     exp_month: { type: Number, required: true },
-    fingerprint: { type: String, unique: [true, 'same card not been saved '] },
+    fingerprint: { type: String},
     user_id: { type: String, required: true },
     exp_year: Number,
     customer: String,
